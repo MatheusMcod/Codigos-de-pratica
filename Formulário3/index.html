@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div  class="texts">
+            <h1 id="titulo1">Formulário de Pesquisa CodeCamp</h1>
+            <h2 id="titulo2">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</h2>
+        </div>
+        <form class="boxform">
+            <fieldset>
+                <div class="inputBox">
+                    <label for="nome" class="inputlabel"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" class="inputUser" placeholder="Insira seu nome" required>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="email" class="inputlabel"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" class="inputUser" placeholder="Insira seu Email" required>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="idade" class="inputlabel"><strong>Idade</strong></label>
+                    <label for="idade">(opcional)</label>
+                    <input type="number" name="idade" class="inputUser" id="idade" placeholder="Insira sua Idade">
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="funcao" class="inputlabel"><strong>Qual opção melhor descreve sua função atual?</strong></label>
+                    <select name="funcao" id="funcao" class="inputUser2">
+                        <option>Selecione sua função atual</option>
+                        <option>Estudante</option>
+                        <option>Trabalhador em tempo integral</option>
+                        <option>Aprendiz em tempo integral</option>
+                        <option>Prefiro não dizer</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <br>
+                <div class="inputcheck">
+                    <label for="recomend" class="inputlabel" style="padding-bottom: 15px;"><strong>Você recomendaria a CodeCamp a um amigo?</strong></label>
+                    <div class="inputcheckrec">
+                        <input type="radio" name="recomend" value="def">
+                        <label for="def">Definitivamente</label>
+                    </div>
+                    <div class="inputcheckrec">
+                        <input type="radio" name="recomend" value="tal"> 
+                        <label for="tal">Talvez</label>
+                    </div>
+                    <div class="inputcheckrec">
+                        <input type="radio" name="recomend" value="nun">
+                        <label for="nun">Nunca</label>
+                    </div>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="preferencia" class="inputlabel"><strong>Qual é o seu recurso favorito do CodeCamp?</strong></label>
+                    <select name="preferencia" id="preferencia" class="inputUser2">
+                        <option selected disabled value="">Escolha uma opção</option>
+                        <option>Desafios</option>
+                        <option>Projetos</option>
+                        <option>Comunidade</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+                <br>
+                <div class="inputcheck">
+                    <div style="padding-bottom: 15px;">
+                        <label class="inputlabel"><strong>O que você gostaria de ver melhorado?</strong></label>
+                        <label >(Marque todos os que se aplicam)</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug1" id="sug1" value="front">
+                        <label for="sug1">Projetos Front-end</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug2" id="sug2" value="back">
+                        <label for="sug2">Projetos Back-end</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug3" id="sug3" value="dados">
+                        <label for="sug3">Visualização de dados</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug4" id="sug4" value="desafios">
+                        <label for="sug4">Desafios</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug5" id="sug5" value="comunidade">
+                        <label for="sug5">Comunidade Open Source</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug6" id="sug6" value="gitter">
+                        <label for="sug6">Salas de ajuda do Gitter</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug7" id="sug7" value="videos">
+                        <label for="sug7">Videos</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug8" id="sug8" value="encontros">
+                        <label for="sug8">Encontros da Cidade</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug9" id="sug9" value="wiki">
+                        <label for="sug9">Wiki</label>
+                    </div>
+                    <div class="inputcheckdiv">
+                        <input type="checkbox" name="sug10" id="sug10" value="forum">
+                        <label for="sug10">Fórum</label>
+                    </div>
+                    <div class="inputcheckdiv" >
+                        <input type="checkbox" name="sug11" id="sug11" value="cursos">
+                        <label for="sug11">Cursos adicionais</label>
+                    </div>
+                </div>
+                <br>
+                <div class="inputrasc">
+                    <label for="suges" class="inputlabel"><strong>Algum comentário ou sugestão?</strong></label>
+                    <textarea name="suges" id="suges" cols="82" rows="10" placeholder="Digite aqui..."></textarea>
+                </div>
+                <br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

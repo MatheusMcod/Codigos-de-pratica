@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(imagens/Como-a-programação-neurolinguística-o-pode-ajudar-no-seu-quotidiano.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(21, 21, 112, 0.747);
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 55px;
+    width: 700px;
+    height: 85%;
+    color: white;
+}
+
+.boxform {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+}
+
+fieldset{
+    border: 0;
+}
+
+.texts {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+}
+
+#titulo2 {
+    font-size: 18px;
+    padding: 0.5em;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputlabel{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputUser{
+    border: none; 
+    outline: none;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.inputUser2{
+    border: none; 
+    outline: none;
+    width: 98%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.inputcheck{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.inputcheckdiv {
+    padding: 6px;   
+}
+
+.inputcheckrec{
+    padding: 5px;
+}
+
+textarea {
+    border: none;
+    outline: none
+}
+
+button{
+    width: 98%;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(66, 212, 66);
+    color: white;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgb(39, 151, 39);
+
+}
