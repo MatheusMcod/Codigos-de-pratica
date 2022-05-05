@@ -15,7 +15,6 @@ header{
     gap: 70px;
     padding: 2rem;
     font-size: 20px;
-    align-items: center;
 }
 
 .container-head2{
@@ -42,6 +41,7 @@ header{
     background-color: white;
     border: none;
     cursor: pointer;
+    font-size: 17px;
 }
 
 a{
@@ -62,4 +62,13 @@ a{
 
 #menu-open2.active2{
     display: block;
+}
+
+main {
+    display: flex;
+}
+
+.img-main{
+    height: 85vh;
+    
 }
