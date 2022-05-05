@@ -48,12 +48,22 @@ a{
     text-decoration: none;
 }
 
+.menu-features{
+    position: relative;
+}
+
+.menu-company{
+    position: relative;
+}
+
 #menu-open{
     display: none;
+    position: absolute;
 }
 
 #menu-open2{
     display: none;
+    position: absolute;
 }
 
 #menu-open.active{
