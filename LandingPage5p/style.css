@@ -44,6 +44,22 @@ header{
     font-size: 17px;
 }
 
+#reister{
+    border: black 1px 1px;
+}
+
+.button2 {
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    font-size: 22px;
+    border-radius: 15px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
 }
@@ -78,7 +94,31 @@ main {
     display: flex;
 }
 
+.section-principal{
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.section-principal h1 { 
+    font-size: 120px;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+}
+
+.section-principal p {
+    font-size: 30px;
+}
+
 .img-main{
-    height: 85vh;
-    
+    height: 80vh;
+    display: block;
+    margin: auto;
+}
+
+.barra-logos{
+    margin-top: 60px;
 }
