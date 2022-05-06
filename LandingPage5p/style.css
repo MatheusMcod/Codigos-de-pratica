@@ -73,13 +73,21 @@ a{
 }
 
 #menu-open{
+    background-color: whitesmoke;
     display: none;
     position: absolute;
+    padding: 15px;
+    box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 #menu-open2{
+    background-color: whitesmoke;
     display: none;
     position: absolute;
+    padding: 15px;
+    box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 #menu-open.active{
