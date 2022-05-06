@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Roboto:wght@300&family=Satisfy&display=swap');
+
 header{
     display: flex;
-    align-items: center;
+    align-items: center;   
 }
 
 .container-head1{
@@ -14,7 +16,8 @@ header{
     display: flex;
     gap: 70px;
     padding: 2rem;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-head2{
@@ -26,26 +29,46 @@ header{
     list-style: none;
     display: flex;
     gap: 70px;
+    font-weight: 600;
+}
+
+.menu-open a:hover{
+    color: black;
 }
 
 .menu-trigger{
     background-color: white;
+    color: gray;
     border: none;
     cursor: pointer;
     font-size: 17px;
+    font-weight: 600;
+}
+
+.menu-trigger:hover {
+    color: black;
 }
 
 .button{
     width: 130px;
     height: 50px;
     background-color: white;
+    color: gray;
     border: none;
     cursor: pointer;
     font-size: 17px;
+    font-weight: 600;
 }
 
-#reister{
-    border: black 1px 1px;
+#register{
+    border: 1px solid black;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow:1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+    color: black;
 }
 
 .button2 {
@@ -57,11 +80,22 @@ header{
     border-radius: 15px;
     margin-top: 70px;
     margin-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.4s;
 }
 
 a{
     text-decoration: none;
+    color: gray;
 }
 
 .menu-features{
@@ -80,6 +114,7 @@ a{
     box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
+
 
 #menu-open2{
     background-color: whitesmoke;
@@ -114,11 +149,13 @@ main {
     display: block;
     margin-top: 50px;
     margin-bottom: 70px;
-
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .section-principal p {
     font-size: 30px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
 }
 
 .img-main{
