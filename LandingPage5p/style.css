@@ -28,8 +28,14 @@ header{
 .menu-open{
     list-style: none;
     display: flex;
-    gap: 70px;
+    gap: 50px;
     font-weight: 600;
+    font-size: 15px;
+}
+
+
+.menu-open li{
+    margin-bottom: 10px;
 }
 
 .menu-open a:hover{
@@ -110,7 +116,7 @@ a{
     background-color: whitesmoke;
     display: none;
     position: absolute;
-    padding: 15px;
+    padding: 20px;
     box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
@@ -120,9 +126,10 @@ a{
     background-color: whitesmoke;
     display: none;
     position: absolute;
-    padding: 15px;
+    padding: 18px;
     box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
+    font-size: 12px;
 }
 
 #menu-open.active{
@@ -131,6 +138,30 @@ a{
 
 #menu-open2.active2{
     display: block;
+}
+
+#img-up2.remove {
+    display: none;
+}
+
+#img-down2 {
+    display: none;
+}
+
+#img-down2.remove {
+   display: inline;
+}
+
+#img-up.remove {
+    display: none;
+}
+
+#img-down {
+    display: none;
+}
+
+#img-down.remove {
+   display: inline;
 }
 
 main {

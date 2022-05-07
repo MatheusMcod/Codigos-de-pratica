@@ -1,15 +1,41 @@
 const trigger = document.getElementById('trigger');
 const trigger2 = document.getElementById('trigger2');
+const open = document.getElementById('menu-open');
+const open2 = document.getElementById('menu-open2');
+const imgUp = document.getElementById('img-up');
+const imgDown = document.getElementById('img-down');
+const imgUp2 = document.getElementById('img-up2');
+const imgDown2 = document.getElementById('img-down2');
 
-function toggleMenu() {
-    const nav = document.getElementById('menu-open');
-    nav.classList.toggle('active');
+function menuOpen() {
+    open.classList.add('active');
+    imgUp.classList.add('remove');
+    imgDown.classList.add('remove')
 }
 
-function toggleMenu2() {
-    const nav = document.getElementById('menu-open2');
-    nav.classList.toggle('active2');
+function menuClose() {
+    open.classList.remove('active');
+    imgUp.classList.remove('remove');
+    imgDown.classList.remove('remove')
 }
 
-trigger.addEventListener('click', toggleMenu);
-trigger2.addEventListener('click', toggleMenu2);
+function menuOpen2() {
+    open2.classList.add('active2');
+    imgUp2.classList.add('remove');
+    imgDown2.classList.add('remove')
+}
+
+function menuClose2() {
+    open2.classList.remove('active2');
+    imgUp2.classList.remove('remove');
+    imgDown2.classList.remove('remove')
+}
+
+trigger.addEventListener('mouseover', menuOpen);
+open.addEventListener('mouseover', menuOpen);
+trigger.addEventListener('mouseout', menuClose);
+open.addEventListener('mouseout', menuClose);
+trigger2.addEventListener('mouseover', menuOpen2);
+open2.addEventListener('mouseover', menuOpen2);
+trigger2.addEventListener('mouseout', menuClose2);
+open2.addEventListener('mouseout', menuClose2);
