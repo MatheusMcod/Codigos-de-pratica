@@ -211,7 +211,31 @@ main {
 
 /* Media Querys */
 
+@media (max-width: 1440px) {
+    .img-main {
+        width: 50vh;
+    }
+}
 
+@media (max-width: 1200px) {
+
+    .section-principal h1 {
+        font-size: 75px;
+    }
+
+    .section-principal p {
+        font-size: 25px;
+    }
+
+    .img-main {
+        width: 40vh;
+        height: 80vh;
+    }
+
+    .button2 {
+        margin-top: 100px;
+    }
+}
 
 
 
