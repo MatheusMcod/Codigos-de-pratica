@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,12 +6,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Roboto:wght@300&family=Satisfy&display=swap');
 
-header{
+/* Header */
+
+header {
     display: flex;
     align-items: center;   
 }
 
-.container-head1{
+.container-head1 {
     width: 100%;
     display: flex;
     gap: 70px;
@@ -20,29 +22,12 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
-.container-head2{
+.container-head2 {
     display: flex;
     gap: 10px;
 }
 
-.menu-open{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-
-.menu-open li{
-    margin-bottom: 10px;
-}
-
-.menu-open a:hover{
-    color: black;
-}
-
-.menu-trigger{
+.menu-trigger {
     background-color: white;
     color: gray;
     border: none;
@@ -55,7 +40,50 @@ header{
     color: black;
 }
 
-.button{
+.menu-open {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#menu-open {
+    background-color: whitesmoke;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+#menu-open.active {
+   display: block;
+}
+
+.menu-open li {
+    margin-bottom: 10px;
+}
+
+.menu-open a:hover {
+    color: black;
+}
+
+#menu-open2 {
+    background-color: whitesmoke;
+    display: none;
+    position: absolute;
+    padding: 18px;
+    box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+#menu-open2.active2 {
+    display: block;
+}
+
+.button {
     width: 130px;
     height: 50px;
     background-color: white;
@@ -66,79 +94,33 @@ header{
     font-weight: 600;
 }
 
-#register{
+.button:hover {
+    color: black;
+}
+
+
+
+#register {
     border: 1px solid black;
     margin-right: 20px;
     border-radius: 20px;
     box-shadow:1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
-.button:hover {
-    color: black;
-}
-
-.button2 {
-    width: 200px;
-    height: 60px;
-    color: white;
-    background-color: black;
-    font-size: 22px;
-    border-radius: 15px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-}
-
-.button2:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    transition: 0.4s;
-}
-
-a{
+a {
     text-decoration: none;
     color: gray;
 }
 
-.menu-features{
+.menu-features {
     position: relative;
 }
 
-.menu-company{
+.menu-company {
     position: relative;
 }
 
-#menu-open{
-    background-color: whitesmoke;
-    display: none;
-    position: absolute;
-    padding: 20px;
-    box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-
-#menu-open2{
-    background-color: whitesmoke;
-    display: none;
-    position: absolute;
-    padding: 18px;
-    box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    font-size: 12px;
-}
-
-#menu-open.active{
-   display: block;
-}
-
-#menu-open2.active2{
-    display: block;
-}
+/* Setas Up e Down */
 
 #img-up2.remove {
     display: none;
@@ -164,11 +146,14 @@ a{
    display: inline;
 }
 
+
+/* Conteúdo Principal */
+
 main {
     display: flex;
 }
 
-.section-principal{
+.section-principal {
     display: block;
     margin-left: auto;
     margin-top: auto;
@@ -188,13 +173,47 @@ main {
     color: gray;
     font-family: 'Roboto', sans-serif;
 }
+.button2 {
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    font-size: 22px;
+    border-radius: 15px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
 
-.img-main{
-    height: 80vh;
-    display: block;
+.button2:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+
+.img-main {
+    height: 85vh;
+    width: 60vh;
+    
+}
+
+.pic {
     margin: auto;
 }
 
-.barra-logos{
+.barra-logos {
     margin-top: 60px;
 }
+
+/* Media Querys */
+
+
+
+
+
+
+
