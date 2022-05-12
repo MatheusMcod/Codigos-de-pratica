@@ -237,6 +237,33 @@ main {
     }
 }
 
+@media (max-width: 990px) {
+    .container-head1{
+        padding: 1.3rem;
+        gap: 30px;
+    }
+
+    .menu-trigger {
+        font-size: 10px;
+    }
+
+    .menu-open{
+        font-size: 10px;
+        padding-top: 8px;
+    }
+
+    .section-principal h1 {
+        font-size: 50px;
+        margin-top: 170px;
+    }
+
+    .img-main{
+        margin-top: 150px;
+        width: 40vh;
+        height: 60vh;
+    }
+}
+
 
 
 
