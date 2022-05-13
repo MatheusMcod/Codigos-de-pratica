@@ -10,26 +10,27 @@ const imgDown2 = document.getElementById('img-down2');
 function menuOpen() {
     open.classList.add('active');
     imgUp.classList.add('remove');
-    imgDown.classList.add('remove')
+    imgDown.classList.add('remove');
 }
 
 function menuClose() {
     open.classList.remove('active');
     imgUp.classList.remove('remove');
-    imgDown.classList.remove('remove')
+    imgDown.classList.remove('remove');
 }
 
 function menuOpen2() {
     open2.classList.add('active2');
     imgUp2.classList.add('remove');
-    imgDown2.classList.add('remove')
+    imgDown2.classList.add('remove');
 }
 
 function menuClose2() {
     open2.classList.remove('active2');
     imgUp2.classList.remove('remove');
-    imgDown2.classList.remove('remove')
+    imgDown2.classList.remove('remove');
 }
+
 
 trigger.addEventListener('mouseover', menuOpen);
 open.addEventListener('mouseover', menuOpen);
@@ -39,3 +40,4 @@ trigger2.addEventListener('mouseover', menuOpen2);
 open2.addEventListener('mouseover', menuOpen2);
 trigger2.addEventListener('mouseout', menuClose2);
 open2.addEventListener('mouseout', menuClose2);
+

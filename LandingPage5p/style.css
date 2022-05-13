@@ -195,6 +195,10 @@ main {
     transition: 0.4s;
 }
 
+#menu-mob {
+    display: none;
+}
+
 .img-main {
     height: 85vh;
     width: 60vh;
@@ -254,15 +258,34 @@ main {
 
     .section-principal h1 {
         font-size: 50px;
-        margin-top: 170px;
+        margin-top: 100px;
     }
 
-    .img-main{
-        margin-top: 150px;
-        width: 40vh;
-        height: 60vh;
+}
+
+@media (max-width: 430px) {
+    #menu-mob {
+        display: block;
+    }
+
+    #menu-features {
+        display: none;
+    }
+
+    .menu-company {
+        display: none;
+    }
+
+    .menu-open {
+        display: none;
+    }
+
+    .container-head2 {
+        display: none;
     }
 }
+
+
 
 
 
