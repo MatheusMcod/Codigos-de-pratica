@@ -273,6 +273,7 @@ main {
 
     header {
         flex-direction: column;
+        align-items: flex-end;
     }
 
     .head-img {
@@ -301,16 +302,24 @@ main {
     }
 
     #container-head1.mob-active {
+        background-color: white;
+        position: absolute;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
+        margin-top: 50px;
+        width: 50%;
     }
 
     #container-head2.mob-active {
-        width: 20%;
+        background-color: white;
+        position: absolute;
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
+        margin-top: 250px;
+        width: 50%;
+        height: 100%;
     }
     
 
