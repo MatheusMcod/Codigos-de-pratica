@@ -10,8 +10,14 @@
 </head>
 <body>
     <header>
-        <div class="container-head1">
-            <div class="hed1-img"><img src="images/logo.svg" alt=""></div>
+
+        <div class="head-img">
+            <img src="images/logo.svg" alt="">
+            <button id="menu-mob"> sss </button>
+        </div>
+
+        <div id="container-head1">
+            <div class="img-logo"><img src="images/logo.svg" alt=""></div>
             <div id="menu-features">
                 <button class="menu-trigger" id="trigger">
                     <span>Features</span>
@@ -46,20 +52,25 @@
             </ul>
         </div>
 
-        <div class="container-head2">
+        <div id="container-head2">
             <button class="button">Login</button>
             <button class="button" id="register">Register</button>
             
         </div>
 
-        <button id="menu-mob"> sss </button>
+        
         
     </header>
 
     <main>
 
+        <picture class="pic">
+            <source class="img-main" media="(min-width: 430px)" srcset="images/image-hero-mobile.png">
+            <img class="img-main" src="images/image-hero-desktop.png" alt="hero">
+        </picture>
+
         <section class="section-principal">
-            <h1>Make <br> remote  work</h1>
+            <h1>Make <br> Remote  Work</h1>
             <p>Get your team in sync, no matter your location. <br> Streamline processes, create team rituals, and <br> watch productivity soar.</p>
 
             <button class="button2">Learn more</button>
@@ -72,10 +83,7 @@
             </div>
         </section>
 
-        <picture class="pic">
-            <source class="img-main" media="(min-width: 430px)" srcset="images/image-hero-mobile.png">
-            <img class="img-main" src="images/image-hero-desktop.png" alt="hero">
-        </picture>
+
 
         <script src="index.js"></script>
     </main>

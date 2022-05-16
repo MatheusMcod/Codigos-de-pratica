@@ -13,7 +13,11 @@ header {
     align-items: center;   
 }
 
-.container-head1 {
+.head-img{
+    display: none;
+}
+
+#container-head1 {
     width: 100%;
     display: flex;
     gap: 70px;
@@ -22,7 +26,7 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
-.container-head2 {
+#container-head2 {
     display: flex;
     gap: 10px;
 }
@@ -202,11 +206,11 @@ main {
 .img-main {
     height: 85vh;
     width: 60vh;
-    
 }
 
 .pic {
     margin: auto;
+    order: 2;
 }
 
 .barra-logos {
@@ -223,11 +227,11 @@ main {
 
 @media (max-width: 1200px) {
 
-    .section-principal h1 {
+    #section-principal h1 {
         font-size: 75px;
     }
 
-    .section-principal p {
+    #section-principal p {
         font-size: 25px;
     }
 
@@ -242,7 +246,7 @@ main {
 }
 
 @media (max-width: 990px) {
-    .container-head1{
+    #container-head1{
         padding: 1.3rem;
         gap: 30px;
     }
@@ -263,29 +267,85 @@ main {
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 430px) { 
+
+    /* Header */
+
+    header {
+        flex-direction: column;
+    }
+
+    .head-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 25px;
+    }
+
     #menu-mob {
+        display: flex;
+        width: 30px;
+    } 
+
+    .img-logo img {
+        display: none;
+    }
+
+    #container-head1 {
+        display: none; 
+    }
+
+    #container-head2 {
+        display: none;
+    }
+
+    #container-head1.mob-active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #container-head2.mob-active {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+
+    /* Main */
+
+    main {
         display: block;
     }
 
-    #menu-features {
-        display: none;
+    .img-main {
+        height: 40vh;
+        width: 40vh;
     }
 
-    .menu-company {
-        display: none;
+    .section-principal {
+        text-align: center;
     }
 
-    .menu-open {
-        display: none;
+    .section-principal p {
+        font-size: 20px;
     }
 
-    .container-head2 {
-        display: none;
+    .section-principal h1 {
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
+
+    .button2 {
+        margin-bottom: 50px;
+    }
+
 }
 
-
+    
 
 
 
