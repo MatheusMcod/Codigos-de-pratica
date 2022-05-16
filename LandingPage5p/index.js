@@ -38,6 +38,7 @@ function menuMob() {
 
     menu1.classList.toggle('mob-active');
     menu2.classList.toggle('mob-active');
+    mobMenu.classList.toggle('mob-active')
 }
 
 

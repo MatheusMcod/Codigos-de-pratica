@@ -277,17 +277,75 @@ main {
     }
 
     .head-img {
-        width: 100%;
+        width: 93%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 25px;
+        margin: 10px;
+        
+    }
+
+    .head-img button {
+        display: flex;
+        border: none;
+        display: block;
+        background: none;   
+        cursor: pointer;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 25px;
+
+    }
+
+    #hamburger::after, #hamburger::before { 
+        content: '';
+        display: block;
+        height: 2px;
+        width: 25px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+
+    .menu-open{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #menu-open{
+        background-color: white;
+        position: static;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    #menu-open2{
+        background-color: white;
+        position: static;
+        box-shadow: none;
+        border-radius: none;
     }
 
     #menu-mob {
         display: flex;
         width: 30px;
     } 
+
+    #menu-mob.mob-active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #menu-mob.mob-active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #menu-mob.mob-active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 
     .img-logo img {
         display: none;
@@ -309,6 +367,7 @@ main {
         align-items: flex-start;
         margin-top: 50px;
         width: 50%;
+        height: 100%;
     }
 
     #container-head2.mob-active {
@@ -317,9 +376,13 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 250px;
+        margin-top: 450px;
         width: 50%;
         height: 100%;
+    }
+
+    #login {
+        margin-right: 20px;
     }
     
 
@@ -329,9 +392,14 @@ main {
         display: block;
     }
 
+    .pic{
+        width: 100%;
+        height: 50%;
+    }
+
     .img-main {
-        height: 40vh;
-        width: 40vh;
+        height: 50%;
+        width: 100%;
     }
 
     .section-principal {
