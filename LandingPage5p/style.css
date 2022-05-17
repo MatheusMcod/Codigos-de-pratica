@@ -315,20 +315,6 @@ main {
         gap: 30px;
     }
 
-    #menu-open{
-        background-color: white;
-        position: static;
-        box-shadow: none;
-        border-radius: none;
-    }
-
-    #menu-open2{
-        background-color: white;
-        position: static;
-        box-shadow: none;
-        border-radius: none;
-    }
-
     #menu-mob {
         display: flex;
         width: 30px;
@@ -345,6 +331,20 @@ main {
     #menu-mob.mob-active #hamburger::after{
         transform: rotate(-135deg);
         top: -7px;
+    }
+
+    #menu-open{
+        background-color: white;
+        position: static;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    #menu-open2{
+        background-color: white;
+        position: static;
+        box-shadow: none;
+        border-radius: none;
     }
 
     .img-logo img {
