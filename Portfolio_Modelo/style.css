@@ -16,6 +16,10 @@
     --font-action: "Muli", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hamburguer {
     position: fixed;
     width: 2rem;
@@ -191,6 +195,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 80;
 }
 
 .show-menu .sidebar {
@@ -579,4 +584,52 @@ header {
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17181b;
+    width: 100%;
+    height: 7rem;
+}
+
+.footer-content {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #2193b0;
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.6rem #00000009;
 }
